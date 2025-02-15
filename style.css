@@ -1,0 +1,2059 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+  font-family: "Inter", sans-serif;
+}
+:root {
+  --mainColor: #3cab90;
+}
+li {
+  list-style-type: none;
+}
+nav li {
+  cursor: pointer;
+  text-transform: capitalize;
+  padding: 0.8rem 2.8rem;
+}
+
+/* Nav */
+nav {
+  background-color: #0b9586;
+  padding: 1.6rem 15rem;
+}
+nav > div {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+nav > div svg {
+  display: none !important;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+nav ul li:first-child {
+  background-color: rgba(0, 0, 0, 0.06);
+  border-radius: 0.3rem;
+  padding: 0.8rem 2.8rem;
+  border-bottom: 0.3rem solid rgba(0, 0, 0, 0.3);
+  font-weight: 600;
+}
+nav .call {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-transform: capitalize;
+}
+nav .call p:nth-child(2) {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+/* Main */
+main {
+  background-image: url(assets/images/mainImage.png);
+  background-size: cover;
+  height: 65rem;
+  display: flex;
+  flex-direction: column;
+  gap: calc(26.1rem - 15.5rem);
+  padding-left: 15rem;
+  padding-top: calc(15.5rem - 8.6rem);
+}
+
+main .line-div {
+  display: flex;
+  width: 33.283rem;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+}
+main .line-div div {
+  position: relative;
+  width: 22.059rem;
+  height: 0.375rem;
+  background-color: rgba(87, 87, 87, 1);
+}
+main .line-div div::after {
+  content: "";
+  position: absolute;
+  height: 0.375rem;
+  width: 8.901rem;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+main .text {
+  width: 72.9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  font-weight: 600;
+  color: white;
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+main .text h1 {
+  font-size: 5.2rem;
+  line-height: 62.93px;
+  text-transform: capitalize;
+  letter-spacing: -2%;
+}
+
+main .btns {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2.4rem;
+  font-weight: 400;
+  line-height: 1.694rem;
+  letter-spacing: 8%;
+}
+.power-section button,
+main .btns button {
+  outline: none;
+  border: none;
+  font-size: 1.4rem;
+  color: white;
+  color: inherit;
+  border-radius: 10.9rem;
+  padding: 1.2rem 3.4rem;
+}
+
+main .btns button:first-child {
+  width: 17.3rem;
+  text-transform: capitalize;
+  background-color: rgba(60, 171, 144, 1);
+}
+.power-section button,
+.btns button:nth-child(2) {
+  width: 20.8rem;
+  color: rgba(42, 51, 52, 1);
+  background-color: rgba(255, 187, 28, 1);
+}
+/* ---------------------------------------- */
+/* Installers */
+.installers .installers-container {
+  width: 113.552rem;
+  /* width: 100%; */
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2.3rem;
+  padding: 8rem 0;
+}
+
+.installers-container .text-container {
+  width: 59.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  color: rgba(16, 24, 40, 1);
+}
+.installers-container .text-container .text-installer {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.installers-container .text-container h2 {
+  font-size: 4.2rem;
+  font-weight: 600;
+  line-height: 5.083rem;
+  letter-spacing: -2%;
+}
+.installers-container .text-container p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+  color: rgba(71, 84, 103, 1);
+}
+.installers .text-container ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  width: 49.8rem;
+  color: inherit;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 3rem;
+}
+.installers .text-container ul li {
+  display: flex;
+  gap: 1rem;
+}
+.installers .text-container ul li span {
+  color: rgba(132, 189, 58, 1);
+}
+.installers .installerImg {
+  width: 51.852rem;
+  position: relative;
+  margin: 0 auto; /* Center the container */
+}
+.installers .installerImg > img {
+  width: 46.9rem;
+  display: block; /* Ensure the image is treated as a block element */
+  margin: 0 auto; /* Center the image within the container */
+}
+.installers .installerImg > div {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 187, 28, 1);
+  border-radius: 1.2rem;
+  width: 26.6rem;
+  bottom: 2%;
+  left: 0%;
+  padding: 2.4rem 3rem;
+  gap: 2.8rem;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2.095rem;
+  letter-spacing: 0.094rem;
+  text-transform: capitalize;
+}
+.installers .installerImg > div img {
+  width: 9rem;
+  height: 9rem;
+}
+/* ------------------- */
+/* power section */
+.power-section {
+  background-image: url(assets/images/powerImg.png);
+  background-size: cover;
+  height: 50.5rem;
+  padding: 8rem 0;
+  padding-left: 15rem;
+  padding-top: 14.75rem;
+}
+
+.power-section div {
+  width: 67.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  color: white;
+}
+.power-section div h2 {
+  font-size: 4.2rem;
+  font-weight: 600;
+  line-height: 5.083rem;
+  letter-spacing: -2%;
+}
+.power-section div p {
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 2.8rem;
+}
+.power-section button {
+  width: 17.3rem;
+  text-transform: capitalize;
+}
+.solarKits {
+  padding: 0 15rem;
+}
+.solarKits > div {
+  margin: auto;
+  width: 114rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 8rem 0;
+  gap: 4rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+}
+.solarKits .solarText {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 93.6rem;
+  gap: 2.4rem;
+}
+.solarKits > div h2 {
+  text-transform: capitalize;
+  font-size: 4.2rem;
+  font-weight: 600;
+  line-height: 5.083rem;
+  letter-spacing: -2%;
+}
+.solarKits .cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 3.2rem;
+}
+
+.solarKits .cards .card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 35.867rem;
+  gap: 2.4rem;
+  box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.05);
+}
+
+.solarKits .card .cardText {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  padding: 2rem;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+.solarKits .card .cardText h3 {
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 3rem;
+  text-transform: capitalize;
+}
+.energy .energyCard div .view,
+.solarKits .card .cardText div {
+  display: flex;
+  flex-direction: row;
+  text-transform: capitalize;
+  align-items: center;
+  font-size: 1.6rem;
+  color: rgba(60, 171, 144, 1);
+  gap: 0.8rem;
+}
+.energy .energyCard div .view a,
+.solarKits .card .cardText a {
+  text-decoration: none;
+  color: inherit;
+}
+/* ----------------------------------- */
+/* Repair Section */
+.repair {
+  background-image: url(assets/images/repairSec.png);
+  background-size: cover;
+  padding: 9.8rem 29.1rem;
+}
+.repair div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding: 4.4rem;
+  gap: 3.2rem;
+  border-radius: 1.2rem;
+  background-color: rgba(0, 0, 0, 0.57);
+  /* filter: blur(0.1rem); Converted to CSS code */
+  color: white;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 2.8rem;
+}
+.repair h2 {
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 4.2rem;
+  line-height: 5.083rem;
+  letter-spacing: -2%;
+}
+/* ------------------- */
+/* Energy Section */
+.energy {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 8rem 15rem;
+  gap: 3.2rem;
+  background-color: rgba(255, 187, 28, 0.05);
+}
+.products {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.8rem;
+  width: 35.867rem;
+  color: rgba(71, 84, 103, 1);
+}
+.products img {
+  width: 5.6rem;
+  height: 5.6rem;
+  border-radius: 1rem;
+}
+.products h2 {
+  font-size: 4.2rem;
+  font-weight: 600;
+  line-height: 5.083rem;
+  letter-spacing: -2%;
+  color: rgba(16, 24, 40, 1);
+}
+
+.energy .energyCards {
+  display: flex;
+  flex-wrap: wrap;
+  width: calc(35.867rem * 2 + 3.2rem);
+  gap: 3.2rem;
+}
+.energy .energyCard {
+  background-color: rgba(60, 171, 144, 0.05);
+  width: 35.867rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 2.4rem;
+  gap: 3.2rem;
+  border-radius: 1.2rem;
+  border: 0.1rem solid rgba(60, 171, 144, 1);
+  box-shadow: 0 0.4rem 3rem 0 rgba(0, 0, 0, 0.05);
+}
+
+.energy .energyCard div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+}
+.energy .energyCard div h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 3rem;
+}
+/* ---------------------------- */
+/* Values */
+.values {
+  padding: 8rem 15rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.2rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.8rem;
+  color: rgba(71, 84, 103, 1);
+}
+.values h2 {
+  font-weight: 600;
+  font-size: 4.2rem;
+  line-height: 5.083rem;
+  letter-spacing: -2%;
+  color: rgba(16, 24, 40, 1);
+}
+.values .valuesContainer {
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
+  gap: 3.2rem;
+  width: 114rem;
+}
+.values .valuesContainer .valueItem {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 3.2rem;
+  border: 0.1rem solid rgba(60, 171, 144, 1);
+  border-radius: 1.2rem;
+  background-color: rgba(60, 171, 144, 0.05);
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+.values .valueItem h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 3rem;
+  text-transform: capitalize;
+}
+/* ----------- */
+/* Say Section */
+.saySection {
+  padding: 8rem 15rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 3.2rem;
+}
+.sayText {
+  display: flex;
+  flex-direction: column;
+  gap: 2.8rem;
+  width: 40rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 3.2rem;
+}
+.sayText svg {
+  font-size: 8.8rem;
+  color: rgba(60, 171, 144, 1);
+  align-self: flex-start;
+}
+.sayText h2 {
+  font-size: 4.8rem;
+  font-weight: 700;
+  line-height: 6.4rem;
+  color: rgba(28, 28, 28, 1);
+}
+.sayCard {
+  padding: 4rem;
+  width: 70.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 8.7rem;
+  border-radius: 2.4rem;
+  background-color: rgba(60, 171, 144, 0.06);
+}
+.sayCard .cardText {
+  display: flex;
+  /* flex-direction: column; */
+  gap: 4rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 2.016rem;
+  color: rgba(60, 171, 144, 1);
+}
+.sayCard .cardText p:nth-child(2) {
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 3.6rem;
+  color: rgba(16, 24, 40, 1);
+}
+.sayCard .cardText div:first-child {
+  display: flex;
+  flex-direction: column;
+  gap: 5.2rem;
+}
+
+.sayCard .circles {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.3rem;
+  width: 7.8rem;
+}
+
+.sayCard .circles .circle {
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 50%;
+  background-color: rgba(217, 217, 217, 1);
+}
+.sayCard .circles div:first-child {
+  background-color: rgba(107, 107, 107, 1);
+}
+.profilePart {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.profilePart .profile {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.936rem;
+  color: rgba(28, 28, 28, 1);
+}
+.profileInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+.profilePart .profile img {
+  border-radius: 3rem;
+  width: 6rem;
+  height: 6rem;
+}
+.profilePart .profile .profileInfo h4 {
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.profilePart .arrow {
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 1.6rem;
+}
+/* ------------------- */
+/* Footer */
+footer {
+  padding: 8rem 15rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5.4rem;
+  background-color: rgba(40, 54, 70, 1);
+}
+
+footer > div:first-child {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* width: 114rem; */
+  width: 100%;
+}
+footer .logo {
+  display: flex;
+  flex-direction: column;
+  gap: 3.8rem;
+}
+footer .logo img {
+  width: 18.5rem;
+  height: 6.4rem;
+}
+footer .logo ul {
+  display: flex;
+  flex-wrap: wrap;
+  text-transform: capitalize;
+  list-style-type: none;
+  gap: 4rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+  color: white;
+}
+
+footer > div:nth-child(2) {
+  width: 100%;
+  height: 0.2rem;
+  border: 0.1rem solid rgba(113, 119, 125, 1);
+}
+footer > div:first-child .input {
+  padding: 0rem 0.1rem;
+  display: flex;
+  width: 40.8rem;
+  flex-direction: column;
+  align-self: flex-end;
+  height: 8.2rem;
+  justify-content: space-between;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+  color: white;
+  position: relative;
+}
+footer > div:first-child .input input {
+  width: 100%;
+  height: 4.8rem;
+  border-radius: 3.8rem;
+  padding-left: 2rem;
+  background-color: rgba(255, 255, 255, 0.09);
+  border: 0.1rem solid rgba(179, 189, 199, 1);
+}
+
+footer > div:first-child .input button {
+  position: absolute;
+  border: none;
+  color: white;
+  background-color: rgba(255, 187, 28, 1);
+  padding: 1.62rem 3.4rem;
+  border-radius: 10.9rem;
+  right: 0%;
+  bottom: 0%;
+}
+.footer-end {
+  width: 100%;
+  flex-wrap: wrap;
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.6rem;
+  letter-spacing: 0.026rem;
+  color: rgba(146, 152, 159, 1);
+}
+.text-columns {
+  text-transform: capitalize;
+  display: flex;
+  align-self: flex-start;
+  flex-wrap: wrap;
+  column-count: 2;
+  column-gap: 2rem;
+  /* column-width: 200px; */
+}
+.text-columns p {
+  border-right: 1px solid rgba(146, 152, 159, 1);
+  padding-right: 2rem;
+}
+
+@media (max-width: 1400px) {
+  nav > div {
+    width: 100%;
+    justify-content: space-between;
+    gap: 3rem;
+  }
+  nav svg {
+    display: none;
+    font-size: 2.8rem;
+  }
+  nav ul {
+    display: flex;
+  }
+  nav .call {
+    align-self: flex-end;
+  }
+  nav .call p:nth-child(2) {
+    font-size: 1.8rem;
+  }
+  main .line-div {
+    font-size: 1.6rem;
+  }
+  main .text {
+    font-size: 1.8rem;
+  }
+  main .btns {
+    gap: 2rem;
+  }
+  main .btns button,
+  .power-section button {
+    padding: 1.2rem 2.5rem;
+    font-size: 1.8rem;
+  }
+
+  .installers .installerImg img,
+  .installers .text-container ul,
+  .solarKits .cards img,
+  .energy .energyCard img,
+  .values .valuesContainer {
+    width: 100%;
+  }
+  .installers-container .text-container h2,
+  .power-section div h2,
+  .solarKits > div h2,
+  .repair h2,
+  .products h2,
+  .sayText h2 {
+    font-size: 3.5rem;
+    line-height: 4.8rem;
+  }
+  .installers .text-container ul {
+    font-size: 1.8rem;
+  }
+  .installers .installerImg > div {
+    font-size: 1.2rem;
+    bottom: 5%;
+    line-height: 1.9rem;
+    gap: 1.5rem;
+    padding: 2rem 1.8rem;
+    left: -5%;
+  }
+
+  .solarKits {
+    padding: 0;
+  }
+  .solarKits > div {
+    padding: 8rem 2rem;
+    font-size: 1.4rem;
+  }
+  .solarKits .cards {
+    gap: 2rem;
+    justify-content: center;
+  }
+  .solarKits .cards .card {
+    gap: 1.8rem;
+    width: 32.867rem;
+  }
+  .solarKits .card .cardText {
+    gap: 1rem;
+    font-size: 1.4rem;
+  }
+  .repair {
+    padding: 4.8rem 23rem;
+  }
+  .repair div {
+    padding: 2rem;
+    font-size: 1.3rem;
+    gap: 1.4rem;
+  }
+  .energy {
+    padding: 8rem 2rem;
+    justify-content: center;
+  }
+  .products {
+    font-size: 1.6rem;
+  }
+  .energy .energyCard {
+    gap: 2rem;
+    padding: 2.2rem;
+  }
+  .energy .energyCard div {
+    font-size: 1.4rem;
+  }
+  .values {
+    padding: 0rem 2rem;
+  }
+
+  .saySection {
+    padding: 8rem 3rem;
+  }
+  .sayCard {
+    padding: 2rem;
+  }
+}
+@media (max-width: 1200px) {
+  nav {
+    padding: 1.3rem 1.8rem;
+  }
+  nav > div {
+    width: 100%;
+    justify-content: space-between;
+    gap: 3rem;
+    /* align-items: center; */
+  }
+  nav svg {
+    display: none;
+    font-size: 2.8rem;
+  }
+  nav img {
+    width: 12rem;
+  }
+  nav ul {
+    display: flex;
+  }
+  nav .call {
+    align-self: flex-end;
+  }
+  nav .call p:nth-child(2) {
+    font-size: 1.8rem;
+  }
+  main {
+    padding: 10rem 5rem;
+    gap: calc(20.1rem - 15.5rem);
+  }
+  main .line-div {
+    width: 28.283rem;
+    font-size: 1.6rem;
+  }
+  main .text {
+    font-size: 1.8rem;
+    width: 100%;
+  }
+  main .text h1 {
+    font-size: 4.2rem;
+  }
+  main .btns {
+    gap: 2rem;
+  }
+  main .btns button,
+  .power-section button {
+    padding: 1.2rem 2.5rem;
+    font-size: 1.8rem;
+  }
+  .installers .installers-container {
+    padding: 8rem 1.8rem;
+    gap: 0;
+    justify-content: center;
+  }
+  .installers-container .text-container,
+  .installers .installerImg {
+    width: 45%;
+  }
+
+  .installers .installerImg img,
+  .installers .text-container ul,
+  .power-section div,
+  .solarKits > div,
+  .solarKits .solarText,
+  .solarKits .cards,
+  .solarKits .cards img,
+  .energy .energyCard img,
+  .values .valuesContainer {
+    width: 100%;
+  }
+  .installers-container .text-container h2,
+  .power-section div h2,
+  .solarKits > div h2,
+  .repair h2,
+  .products h2,
+  .sayText h2 {
+    font-size: 3.5rem;
+    line-height: 4.8rem;
+  }
+  .installers .text-container ul {
+    font-size: 1.8rem;
+  }
+  .installers .installerImg > div {
+    width: 43%;
+    font-size: 1.2rem;
+    bottom: 5%;
+    line-height: 1.9rem;
+    gap: 1.5rem;
+    padding: 2rem 1.8rem;
+    left: -5%;
+  }
+
+  .installers .installerImg > div img {
+    width: 7rem;
+    height: 7rem;
+  }
+  .power-section {
+    padding: 6.75rem 3rem 0;
+    height: 42.5rem;
+  }
+  .power-section div {
+    gap: 3rem;
+  }
+  .solarKits {
+    padding: 0;
+  }
+  .solarKits > div {
+    padding: 8rem 2rem;
+    font-size: 1.4rem;
+  }
+  .solarKits .cards {
+    gap: 2rem;
+    justify-content: center;
+  }
+  .solarKits .cards .card {
+    gap: 1.8rem;
+    width: 32.867rem;
+  }
+  .solarKits .card .cardText {
+    gap: 1rem;
+    font-size: 1.4rem;
+  }
+  .repair {
+    padding: 4.8rem 23rem;
+  }
+  .repair div {
+    padding: 2rem;
+    font-size: 1.3rem;
+    gap: 1.4rem;
+  }
+  .energy {
+    padding: 8rem 2rem;
+    justify-content: center;
+  }
+  .products {
+    gap: 1.6rem;
+    font-size: 1.6rem;
+  }
+  .products img {
+    width: 8.6rem;
+    height: 8.6rem;
+  }
+  .energy .energyCard {
+    gap: 2rem;
+    padding: 2.2rem;
+    width: 45%;
+  }
+  .energy .energyCard div {
+    gap: 1.3rem;
+    font-size: 1.4rem;
+  }
+  .values {
+    padding: 0rem 2rem;
+  }
+  .values .valuesContainer {
+    flex-wrap: wrap;
+    justify-content: center;
+    /* flex-direction: row; */
+  }
+  .values .valuesContainer .valueItem {
+    width: 31%;
+  }
+  .saySection {
+    padding: 8rem 3rem;
+    gap: 2rem;
+  }
+  .saySection svg {
+    font-size: 5.8rem;
+  }
+  .sayCard {
+    padding: 2rem;
+    /* gap: 2rem; */
+  }
+  .sayCard .cardText {
+    flex-direction: column;
+  }
+  .sayCard .cardText div:first-child {
+    gap: 2.2rem;
+  }
+  .sayCard .cardText p:nth-child(2) {
+    font-size: 2.2rem;
+  }
+  .profilePart {
+    gap: 2rem;
+  }
+  .profilePart .profile {
+    gap: 1rem;
+  }
+  footer {
+    padding: 5rem 3rem;
+  }
+  footer > div:first-child {
+    gap: 4rem;
+  }
+  footer .logo img {
+    width: 13.5rem;
+  }
+  footer .logo ul {
+    /* flex-direction: column; */
+    gap: 3rem;
+    line-height: 1.4rem;
+  }
+  footer > div:first-child .input button {
+    padding: 1.62rem 2rem;
+  }
+  .text-columns {
+    gap: 1rem;
+  }
+  .footer-end {
+    gap: 3rem;
+  }
+}
+@media (max-width: 992px) {
+  nav {
+    padding: 1.3rem 1.8rem;
+  }
+  nav > div {
+    width: 100%;
+    justify-content: space-between;
+    gap: 3rem;
+    /* align-items: center; */
+  }
+  nav svg {
+    display: none;
+    font-size: 2.8rem;
+  }
+  nav img {
+    width: 12rem;
+  }
+  nav ul {
+    display: flex;
+  }
+  nav .call {
+    align-self: flex-end;
+  }
+  nav .call p:nth-child(2) {
+    font-size: 1.8rem;
+  }
+  main {
+    padding: 10rem 5rem;
+    gap: calc(20.1rem - 15.5rem);
+  }
+  main .line-div {
+    width: 28.283rem;
+    font-size: 1.6rem;
+  }
+  main .text {
+    font-size: 1.8rem;
+    width: 100%;
+  }
+  main .text h1 {
+    font-size: 4.2rem;
+  }
+  main .btns {
+    gap: 2rem;
+  }
+  main .btns button,
+  .power-section button {
+    padding: 1.2rem 2.5rem;
+    font-size: 1.8rem;
+  }
+  .installers .installers-container {
+    padding: 8rem 1.8rem;
+  }
+  .installers-container .text-container,
+  .installers .installerImg,
+  .installers .installerImg img,
+  .installers .text-container ul,
+  .installers .installers-container,
+  .power-section div,
+  .solarKits > div,
+  .solarKits .solarText,
+  .solarKits .cards,
+  .solarKits .cards img,
+  .energy .energyCards,
+  .energy .energyCard img,
+  .values .valuesContainer {
+    width: 100%;
+  }
+  .installers-container .text-container h2,
+  .power-section div h2,
+  .solarKits > div h2,
+  .repair h2,
+  .products h2,
+  .sayText h2 {
+    font-size: 4rem;
+    line-height: 4.8rem;
+  }
+  .installers .text-container ul {
+    font-size: 1.8rem;
+  }
+  .installers .installerImg > div {
+    width: 32%;
+    font-size: 1.2rem;
+    bottom: 2%;
+    line-height: 1.9rem;
+    gap: 1.5rem;
+    padding: 2rem 1.8rem;
+    left: -3%;
+  }
+
+  .installers .installerImg > div img {
+    width: 7rem;
+    height: 7rem;
+  }
+  .power-section {
+    padding: 6.75rem 3rem 0;
+    height: 42.5rem;
+  }
+  .power-section div {
+    gap: 3rem;
+  }
+  .solarKits {
+    padding: 0;
+  }
+  .solarKits > div {
+    padding: 8rem 2rem;
+    font-size: 1.4rem;
+  }
+  .solarKits .cards {
+    gap: 2rem;
+    justify-content: center;
+  }
+  .solarKits .cards .card {
+    gap: 1.8rem;
+    width: 32.867rem;
+  }
+  .solarKits .card .cardText {
+    gap: 1rem;
+    font-size: 1.4rem;
+  }
+  .repair {
+    padding: 4.8rem 1rem;
+  }
+  .repair div {
+    padding: 2rem;
+    font-size: 1.3rem;
+    gap: 1.4rem;
+  }
+  .energy {
+    padding: 8rem 2rem;
+  }
+  .products {
+    gap: 1.6rem;
+    font-size: 1.6rem;
+  }
+  .products img {
+    width: 8.6rem;
+    height: 8.6rem;
+  }
+  .energy .energyCard {
+    gap: 2rem;
+    padding: 2.2rem;
+    width: 45%;
+  }
+  .energy .energyCard div {
+    gap: 1.3rem;
+    font-size: 1.4rem;
+  }
+  .values {
+    padding: 0rem 2rem;
+  }
+  .values .valuesContainer {
+    flex-wrap: wrap;
+    justify-content: center;
+    /* flex-direction: row; */
+  }
+  .values .valuesContainer .valueItem {
+    width: 45%;
+  }
+  .saySection {
+    padding: 8rem 3rem;
+    gap: 2rem;
+  }
+  .saySection svg {
+    font-size: 5.8rem;
+  }
+  .sayCard {
+    padding: 2rem;
+    /* gap: 2rem; */
+  }
+  .sayCard .cardText {
+    flex-direction: column;
+  }
+  .sayCard .cardText div:first-child {
+    gap: 2.2rem;
+  }
+  .sayCard .cardText p:nth-child(2) {
+    font-size: 2.2rem;
+  }
+  .profilePart {
+    gap: 2rem;
+  }
+  .profilePart .profile {
+    gap: 1rem;
+  }
+  footer {
+    padding: 5rem 3rem;
+  }
+  footer > div:first-child {
+    gap: 4rem;
+  }
+  footer .logo img {
+    width: 13.5rem;
+  }
+  footer .logo ul {
+    /* flex-direction: column; */
+    gap: 3rem;
+    line-height: 1.4rem;
+  }
+  footer > div:first-child .input button {
+    padding: 1.62rem 2rem;
+  }
+  .text-columns {
+    gap: 1rem;
+  }
+  .footer-end {
+    gap: 3rem;
+  }
+}
+@media (max-width: 768px) {
+  nav {
+    padding: 1.3rem 1.8rem;
+  }
+  nav > div {
+    width: 100%;
+    justify-content: space-between;
+    gap: 1rem;
+    /* align-items: center; */
+  }
+  nav svg {
+    display: block;
+    font-size: 2.8rem;
+  }
+  nav img {
+    width: 12rem;
+  }
+  nav ul {
+    display: none;
+  }
+  nav .call {
+    align-items: center;
+    align-self: center;
+    text-align: center;
+    margin: auto;
+  }
+  nav .call p:nth-child(2) {
+    font-size: 1.8rem;
+  }
+  main {
+    padding: 4rem 2rem;
+    gap: calc(20.1rem - 15.5rem);
+  }
+  main .line-div {
+    width: 28.283rem;
+    font-size: 1.6rem;
+  }
+  main .text {
+    font-size: 1.8rem;
+    width: 100%;
+  }
+  main .text h1 {
+    font-size: 4.2rem;
+  }
+  main .btns {
+    gap: 2rem;
+  }
+  main .btns button,
+  .power-section button {
+    padding: 1.2rem 2.5rem;
+    font-size: 1.8rem;
+  }
+  .installers .installers-container {
+    padding: 8rem 1.8rem;
+  }
+  .installers-container .text-container,
+  .installers .installerImg,
+  .installers .installerImg img,
+  .installers .text-container ul,
+  .installers .installers-container,
+  .power-section div,
+  .solarKits > div,
+  .solarKits .solarText,
+  .solarKits .cards,
+  .solarKits .cards img,
+  .energy .energyCards,
+  .energy .energyCard img,
+  .values .valuesContainer,
+  footer .logo {
+    width: 100%;
+  }
+  .installers-container .text-container h2,
+  .power-section div h2,
+  .solarKits > div h2,
+  .repair h2,
+  .products h2,
+  .sayText h2 {
+    font-size: 4rem;
+    line-height: 4.8rem;
+  }
+  .installers .text-container ul {
+    font-size: 1.8rem;
+  }
+  .installers .installerImg > div {
+    width: 49%;
+    font-size: 1.2rem;
+    bottom: 2%;
+    line-height: 1.9rem;
+    gap: 1.5rem;
+    padding: 2rem 1.8rem;
+    left: -3%;
+  }
+
+  .installers .installerImg > div img {
+    width: 7rem;
+    height: 7rem;
+  }
+  .power-section {
+    padding: 6.75rem 3rem 0;
+    height: 42.5rem;
+  }
+  .power-section div {
+    gap: 3rem;
+  }
+  .solarKits {
+    padding: 0;
+  }
+  .solarKits > div {
+    padding: 8rem 2rem;
+    font-size: 1.4rem;
+  }
+  .solarKits .cards {
+    gap: 2rem;
+    justify-content: center;
+  }
+  .solarKits .cards .card {
+    gap: 1.8rem;
+    width: 32.867rem;
+  }
+  .solarKits .card .cardText {
+    gap: 1rem;
+    font-size: 1.4rem;
+  }
+  .repair {
+    padding: 4.8rem 1rem;
+  }
+  .repair div {
+    padding: 2rem;
+    font-size: 1.3rem;
+    gap: 1.4rem;
+  }
+  .energy {
+    padding: 8rem 2rem;
+  }
+  .products {
+    gap: 1.6rem;
+    font-size: 1.6rem;
+  }
+  .products img {
+    width: 8.6rem;
+    height: 8.6rem;
+  }
+  .energy .energyCard {
+    gap: 2rem;
+    padding: 2.2rem;
+    width: 45%;
+  }
+  .energy .energyCard div {
+    gap: 1.3rem;
+    font-size: 1.4rem;
+  }
+  .values {
+    padding: 0rem 2rem;
+  }
+  .values .valuesContainer {
+    flex-wrap: wrap;
+    justify-content: center;
+    /* flex-direction: row; */
+  }
+  .values .valuesContainer .valueItem {
+    width: 45%;
+  }
+  .saySection {
+    padding: 8rem 3rem;
+    gap: 2rem;
+  }
+  .saySection svg {
+    font-size: 5.8rem;
+  }
+  .sayCard {
+    padding: 2rem;
+    /* gap: 2rem; */
+  }
+  .sayCard .cardText {
+    flex-direction: column;
+  }
+  .sayCard .cardText div:first-child {
+    gap: 2.2rem;
+  }
+  .sayCard .cardText p:nth-child(2) {
+    font-size: 2.2rem;
+  }
+  .profilePart {
+    gap: 2rem;
+  }
+  .profilePart .profile {
+    gap: 1rem;
+  }
+  footer {
+    padding: 5rem 3rem;
+  }
+  footer > div:first-child {
+    gap: 4rem;
+  }
+  footer .logo img {
+    width: 13.5rem;
+  }
+  footer .logo ul {
+    /* flex-direction: column; */
+    gap: 3rem;
+    line-height: 1.4rem;
+  }
+  footer > div:first-child .input button {
+    padding: 1.62rem 2rem;
+  }
+  .text-columns {
+    gap: 1rem;
+  }
+  .footer-end {
+    gap: 3rem;
+  }
+}
+@media (max-width: 576px) {
+  nav {
+    padding: 1.3rem 1.8rem;
+  }
+  nav > div {
+    width: 100%;
+    justify-content: space-between;
+    gap: 1rem;
+    /* align-items: center; */
+  }
+  nav svg {
+    display: block;
+    font-size: 2.8rem;
+  }
+  nav img {
+    width: 12rem;
+  }
+  nav ul {
+    display: none;
+  }
+  nav .call {
+    align-items: center;
+    align-self: center;
+    text-align: center;
+    margin: auto;
+  }
+  nav .call p:nth-child(2) {
+    font-size: 1.8rem;
+  }
+  main {
+    padding: 4rem 2rem;
+    gap: calc(20.1rem - 15.5rem);
+  }
+  main .line-div {
+    width: 28.283rem;
+    font-size: 1.6rem;
+  }
+  main .text {
+    font-size: 1.8rem;
+    width: 100%;
+  }
+  main .text h1 {
+    font-size: 4.2rem;
+  }
+  main .btns {
+    gap: 2rem;
+  }
+  main .btns button,
+  .power-section button {
+    padding: 1.2rem 2.5rem;
+    font-size: 1.8rem;
+  }
+  .installers .installers-container {
+    padding: 8rem 1.8rem;
+  }
+  .installers-container .text-container,
+  .installers .installerImg,
+  .installers .installerImg img,
+  .installers .text-container ul,
+  .installers .installers-container,
+  .power-section div,
+  .solarKits > div,
+  .solarKits .solarText,
+  .solarKits .cards,
+  .solarKits .cards img,
+  .solarKits .cards card,
+  .energy .energyCard,
+  .energy .energyCards,
+  .energy .energyCard img,
+  .values .valuesContainer,
+  footer .logo {
+    width: 100%;
+  }
+  .installers-container .text-container h2,
+  .power-section div h2,
+  .solarKits > div h2,
+  .repair h2,
+  .products h2,
+  .sayText h2 {
+    font-size: 4rem;
+    line-height: 4.8rem;
+  }
+  .installers .text-container ul {
+    font-size: 1.8rem;
+  }
+  .installers .installerImg > div {
+    width: 49%;
+    font-size: 1.2rem;
+    bottom: 2%;
+    line-height: 1.9rem;
+    gap: 1.5rem;
+    padding: 2rem 1.8rem;
+    left: -3%;
+  }
+
+  .installers .installerImg > div img {
+    width: 7rem;
+    height: 7rem;
+  }
+  .power-section {
+    padding: 6.75rem 3rem 0;
+  }
+  .power-section div {
+    gap: 3rem;
+  }
+  .solarKits {
+    padding: 0;
+  }
+  .solarKits > div {
+    padding: 8rem 2rem;
+    font-size: 1.4rem;
+  }
+  .solarKits .cards {
+    gap: 2rem;
+    justify-content: center;
+  }
+  .solarKits .cards card {
+    gap: 1.8rem;
+  }
+  .solarKits .card .cardText {
+    gap: 1rem;
+    font-size: 1.4rem;
+  }
+  .repair {
+    padding: 4.8rem 1rem;
+  }
+  .repair div {
+    padding: 2rem;
+    font-size: 1.3rem;
+    gap: 1.4rem;
+  }
+  .energy {
+    padding: 8rem 2rem;
+  }
+  .products {
+    gap: 1.6rem;
+    font-size: 1.6rem;
+  }
+  .products img {
+    width: 8.6rem;
+    height: 8.6rem;
+  }
+  .energy .energyCard {
+    gap: 2rem;
+    padding: 2.2rem;
+  }
+  .energy .energyCard div {
+    gap: 1.3rem;
+    font-size: 1.4rem;
+  }
+  .values {
+    padding: 0rem 2rem;
+  }
+  .values .valuesContainer {
+    flex-wrap: wrap;
+  }
+  .saySection {
+    padding: 8rem 3rem;
+    gap: 2rem;
+  }
+  .saySection svg {
+    font-size: 5.8rem;
+  }
+  .sayCard {
+    padding: 2rem;
+    /* gap: 2rem; */
+  }
+  .sayCard .cardText {
+    flex-direction: column;
+  }
+  .sayCard .cardText div:first-child {
+    gap: 2.2rem;
+  }
+  .sayCard .cardText p:nth-child(2) {
+    font-size: 2.2rem;
+  }
+  .profilePart {
+    gap: 2rem;
+  }
+  .profilePart .profile {
+    gap: 1rem;
+  }
+  footer {
+    padding: 5rem 3rem;
+  }
+  footer > div:first-child {
+    gap: 4rem;
+  }
+  footer .logo img {
+    width: 13.5rem;
+  }
+  footer .logo ul {
+    /* flex-direction: column; */
+    gap: 3rem;
+    line-height: 1.4rem;
+  }
+  footer > div:first-child .input button {
+    padding: 1.62rem 2rem;
+  }
+  .text-columns {
+    gap: 1rem;
+  }
+  .footer-end {
+    gap: 3rem;
+  }
+}
+@media (max-width: 400px) {
+  nav {
+    padding: 1.3rem 1.8rem;
+  }
+  nav > div {
+    width: 100%;
+    justify-content: space-between;
+    gap: 1rem;
+    /* align-items: center; */
+  }
+  nav svg {
+    display: block;
+    font-size: 2.8rem;
+  }
+  nav img {
+    width: 12rem;
+  }
+  nav ul {
+    display: none;
+  }
+  nav .call {
+    align-items: center;
+    align-self: center;
+    text-align: center;
+    margin: auto;
+  }
+  nav .call p:nth-child(2) {
+    font-size: 1.8rem;
+  }
+  main {
+    padding: 4rem 2rem;
+    gap: calc(20.1rem - 15.5rem);
+  }
+  main .line-div {
+    width: 28.283rem;
+    font-size: 1.6rem;
+  }
+  main .text {
+    font-size: 1.8rem;
+    width: 100%;
+  }
+  main .text h1 {
+    font-size: 4.2rem;
+  }
+  main .btns {
+    gap: 2rem;
+  }
+  main .btns button,
+  .power-section button {
+    padding: 1.2rem 2.5rem;
+    font-size: 1.8rem;
+  }
+  .installers .installers-container {
+    padding: 8rem 1.8rem;
+  }
+  .installers-container .text-container,
+  .installers .installerImg,
+  .installers .installerImg img,
+  .installers .text-container ul,
+  .installers .installers-container,
+  .power-section div,
+  .solarKits > div,
+  .solarKits .solarText,
+  .solarKits .cards,
+  .solarKits .cards img,
+  .solarKits .cards card,
+  .energy .energyCard,
+  .energy .energyCards,
+  .energy .energyCard img,
+  .values .valuesContainer,
+  footer .logo {
+    width: 100%;
+  }
+  .installers-container .text-container h2,
+  .power-section div h2,
+  .solarKits > div h2,
+  .repair h2,
+  .products h2,
+  .sayText h2 {
+    font-size: 4rem;
+    line-height: 4.8rem;
+  }
+  .installers .text-container ul {
+    font-size: 1.8rem;
+  }
+  .installers .installerImg > div {
+    width: 60%;
+    font-size: 1.2rem;
+    bottom: -16%;
+    line-height: 1.9rem;
+    gap: 1.5rem;
+    padding: 2rem 1.8rem;
+    left: -3%;
+  }
+
+  .installers .installerImg > div img {
+    width: 7rem;
+    height: 7rem;
+  }
+  .power-section {
+    padding: 6.75rem 3rem 0;
+  }
+  .power-section div {
+    gap: 3rem;
+  }
+  .solarKits {
+    padding: 0;
+  }
+  .solarKits > div {
+    padding: 8rem 2rem;
+    font-size: 1.4rem;
+  }
+  .solarKits .cards {
+    gap: 2rem;
+  }
+  .solarKits .cards card {
+    gap: 1.8rem;
+  }
+  .solarKits .card .cardText {
+    gap: 1rem;
+    font-size: 1.4rem;
+  }
+  .repair {
+    padding: 4.8rem 1rem;
+  }
+  .repair div {
+    padding: 2rem;
+    font-size: 1.3rem;
+    gap: 1.4rem;
+  }
+  .energy {
+    padding: 8rem 2rem;
+  }
+  .products {
+    gap: 1.6rem;
+    font-size: 1.6rem;
+  }
+  .products img {
+    width: 8.6rem;
+    height: 8.6rem;
+  }
+  .energy .energyCard {
+    gap: 2rem;
+    padding: 2.2rem;
+  }
+  .energy .energyCard div {
+    gap: 1.3rem;
+    font-size: 1.4rem;
+  }
+  .values {
+    padding: 0rem 2rem;
+  }
+  .values .valuesContainer {
+    flex-wrap: wrap;
+  }
+  .saySection {
+    padding: 8rem 3rem;
+    gap: 2rem;
+  }
+  .saySection svg {
+    font-size: 5.8rem;
+  }
+  .sayCard {
+    padding: 2rem;
+    /* gap: 2rem; */
+  }
+  .sayCard .cardText {
+    flex-direction: column;
+  }
+  .sayCard .cardText div:first-child {
+    gap: 2.2rem;
+  }
+  .sayCard .cardText p:nth-child(2) {
+    font-size: 2.2rem;
+  }
+  .profilePart {
+    gap: 2rem;
+  }
+  .profilePart .profile {
+    gap: 1rem;
+  }
+  footer {
+    padding: 5rem 3rem;
+  }
+  footer > div:first-child {
+    gap: 4rem;
+  }
+  footer .logo img {
+    width: 13.5rem;
+  }
+  footer .logo ul {
+    /* flex-direction: column; */
+    gap: 3rem;
+    line-height: 1.4rem;
+  }
+  footer > div:first-child .input button {
+    padding: 1.62rem 2rem;
+  }
+  .text-columns {
+    gap: 1rem;
+  }
+  .footer-end {
+    gap: 3rem;
+  }
+}
+@media (max-width: 320px) {
+  nav {
+    padding: 1.3rem 1.8rem;
+  }
+  nav > div {
+    width: 100%;
+    justify-content: space-between;
+    gap: 1rem;
+    /* align-items: center; */
+  }
+  nav svg {
+    display: block;
+    font-size: 2.8rem;
+  }
+  nav img {
+    width: 12rem;
+  }
+  nav ul {
+    display: none;
+  }
+  nav .call {
+    align-items: center;
+    align-self: center;
+    text-align: center;
+    margin: auto;
+  }
+  nav .call p:nth-child(2) {
+    font-size: 1.8rem;
+  }
+  main {
+    padding: 4rem 2rem;
+    gap: calc(20.1rem - 15.5rem);
+  }
+  main .line-div {
+    width: 28.283rem;
+    font-size: 1.6rem;
+  }
+  main .text {
+    font-size: 1.8rem;
+    width: 100%;
+  }
+  main .text h1 {
+    font-size: 4.2rem;
+  }
+  main .btns {
+    gap: 2rem;
+  }
+  main .btns button,
+  .power-section button {
+    padding: 1.2rem 2.5rem;
+    font-size: 1.8rem;
+  }
+  .installers .installers-container {
+    padding: 8rem 1.8rem;
+  }
+  .installers-container .text-container,
+  .installers .installerImg,
+  .installers .installerImg img,
+  .installers .text-container ul,
+  .installers .installers-container,
+  .power-section div,
+  .solarKits > div,
+  .solarKits .solarText,
+  .solarKits .cards,
+  .solarKits .cards img,
+  .solarKits .cards card,
+  .energy .energyCard,
+  .energy .energyCards,
+  .energy .energyCard img,
+  .values .valuesContainer,
+  footer .logo {
+    width: 100%;
+  }
+  .installers-container .text-container h2,
+  .power-section div h2,
+  .solarKits > div h2,
+  .repair h2,
+  .products h2,
+  .sayText h2 {
+    font-size: 4rem;
+    line-height: 4.8rem;
+  }
+  .installers .text-container ul {
+    font-size: 1.8rem;
+  }
+  .installers .installerImg > div {
+    width: 60%;
+    font-size: 1.2rem;
+    bottom: -16%;
+    line-height: 1.9rem;
+    gap: 1.5rem;
+    padding: 2rem 1.8rem;
+    left: -3%;
+  }
+
+  .installers .installerImg > div img {
+    width: 7rem;
+    height: 7rem;
+  }
+  .power-section {
+    padding: 6.75rem 3rem 0;
+  }
+  .power-section div {
+    gap: 3rem;
+  }
+  .solarKits {
+    padding: 0;
+  }
+  .solarKits > div {
+    padding: 8rem 2rem;
+    font-size: 1.4rem;
+  }
+  .solarKits .cards {
+    gap: 2rem;
+  }
+  .solarKits .cards card {
+    gap: 1.8rem;
+  }
+  .solarKits .card .cardText {
+    gap: 1rem;
+    font-size: 1.4rem;
+  }
+  .repair {
+    padding: 4.8rem 1rem;
+  }
+  .repair div {
+    padding: 2rem;
+    font-size: 1.3rem;
+    gap: 1.4rem;
+  }
+  .energy {
+    padding: 8rem 2rem;
+  }
+  .products {
+    gap: 1.6rem;
+    font-size: 1.6rem;
+  }
+  .products img {
+    width: 8.6rem;
+    height: 8.6rem;
+  }
+  .energy .energyCard {
+    gap: 2rem;
+    padding: 2.2rem;
+  }
+  .energy .energyCard div {
+    gap: 1.3rem;
+    font-size: 1.4rem;
+  }
+  .values {
+    padding: 0rem 2rem;
+  }
+  .values .valuesContainer {
+    flex-wrap: wrap;
+  }
+  .saySection {
+    padding: 8rem 3rem;
+    gap: 2rem;
+  }
+  .saySection svg {
+    font-size: 5.8rem;
+  }
+  .sayCard {
+    padding: 2rem;
+    /* gap: 2rem; */
+  }
+  .sayCard .cardText {
+    flex-direction: column;
+  }
+  .sayCard .cardText div:first-child {
+    gap: 2.2rem;
+  }
+  .sayCard .cardText p:nth-child(2) {
+    font-size: 2.2rem;
+  }
+  .profilePart {
+    gap: 2rem;
+  }
+  .profilePart .profile {
+    gap: 1rem;
+  }
+  footer {
+    padding: 5rem 3rem;
+  }
+  footer > div:first-child {
+    gap: 4rem;
+  }
+  footer .logo img {
+    width: 13.5rem;
+  }
+  footer .logo ul {
+    /* flex-direction: column; */
+    gap: 3rem;
+    line-height: 1.4rem;
+  }
+  footer > div:first-child .input button {
+    padding: 1.62rem 2rem;
+  }
+  .text-columns {
+    gap: 1rem;
+  }
+  .footer-end {
+    gap: 3rem;
+  }
+}
